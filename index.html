@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Jumpy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="img/Group 6.png" alt="LOGO DNC">
+            </div>
+            <div id="logoCentro">
+            <img src="img/layer1.svg" alt="NOME DNC">
+            </div>
+        </header>
+        <section>
+            <h3>Bem vindo ao Jumpy! </h3>
+
+            <form name="myForm" action="index.html" method="post">
+
+                 <label for="name">Nome Completo:</label>
+                <input class="success" type="text" id="username" placeholder="Nome Completo" required>
+                <!--div mensagem-->
+                <div class="divMensagens"></div>
+
+                <label for="email" class="form-control error">Email:</label>
+                <input type="email" name="email" placeholder="Email@email.com" required>
+                <div class="divMensagens"></div>
+               
+                <label for="fone">Telefone:</label>
+                <input type="tel" name="ffone" placeholder="(00) 91234 1234" required>
+                <div class="divMensagens"></div>
+               
+
+                <label for="cpf">CPF:</label>
+                <input type="text"name="fcpf" placeholder="000.000.000-00" required>
+                <div class="divMensagens"></div>
+               
+
+                <label for="pass">Senha:</label>
+                <input type="password" name="fpass" placeholder="**********" required>
+                <div class="divMensagens"></div>
+                
+
+                <button type="submit" onclick="return validar()">Cadastrar</button>
+
+                </form>
+
+        </section>
+
+        <script type="text/javascript" src="/script.js"></script>
+        
+    </body>
+    </html>
